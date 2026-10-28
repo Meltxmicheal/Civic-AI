@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+Tamil:wght@400;500;600;700&display=swap');
+@import "maplibre-gl/dist/maplibre-gl.css";
+
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-tamil: 'Noto Sans Tamil', 'Inter', system-ui, sans-serif;
+
+  --color-civic-blue: #1c3a6e;
+  --color-civic-blue-dark: #102244;
+  --color-civic-blue-light: #e8eef8;
+  --color-civic-teal: #0a6e5f;
+  --color-civic-teal-dark: #075048;
+  --color-civic-teal-light: #e0f4f1;
+  --color-civic-saffron: #cf6009;
+  --color-civic-saffron-dark: #a34b07;
+  --color-civic-saffron-light: #fef0e6;
+  --color-civic-navy: #0c1a30;
+  --color-civic-bg: #f4f6fa;
+  --color-civic-surface: #ffffff;
+  --color-civic-muted: #64748b;
+  --color-civic-border: #d0d5e2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: #f4f6fa;
+  color: #0c1a30;
+  -webkit-font-smoothing: antialiased;
+}
+
+body.ta-active {
+  font-family: 'Noto Sans Tamil', 'Inter', system-ui, sans-serif;
+}
+
+.font-tamil {
+  font-family: 'Noto Sans Tamil', 'Inter', system-ui, sans-serif;
+  line-height: 1.75;
+}
+
+body.high-contrast {
+  filter: contrast(1.5);
+}
+
+body.large-text {
+  font-size: 110%;
+}
+
+body.xlarge-text {
+  font-size: 125%;
+}
+
+body.reduce-motion * {
+  animation-duration: 0.01ms !important;
+  transition-duration: 0.01ms !important;
+}
+
+body.line-spacing {
+  line-height: 2;
+}
+
+body.highlight-links a {
+  text-decoration: underline !important;
+  outline: 2px solid #cf6009 !important;
+  outline-offset: 2px;
+}
+
+:focus-visible {
+  outline: 3px solid #cf6009;
+  outline-offset: 2px;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d0d5e2;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #1c3a6e;
+  color: white;
+  padding: 8px 16px;
+  z-index: 100;
+  font-weight: 600;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slide-in-right {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.animate-fade-in { animation: fade-in 0.3s ease-out; }
+.animate-slide-in-right { animation: slide-in-right 0.3s ease-out; }
+.animate-pulse-dot { animation: pulse-dot 1.5s ease-in-out infinite; }
+
+.skeleton {
+  background: linear-gradient(90deg, #e2e8f0 25%, #f1f5f9 50%, #e2e8f0 75%);
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.5s infinite;
+}
+
+@keyframes skeleton-shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.civic-shadow-sm { box-shadow: 0 1px 3px rgba(12, 26, 48, 0.08), 0 1px 2px rgba(12, 26, 48, 0.06); }
+.civic-shadow { box-shadow: 0 4px 12px rgba(12, 26, 48, 0.08), 0 2px 4px rgba(12, 26, 48, 0.06); }
+.civic-shadow-lg { box-shadow: 0 8px 24px rgba(12, 26, 48, 0.1), 0 4px 8px rgba(12, 26, 48, 0.06); }
+
+/* Government Circular Moving Marquee Animation */
+@keyframes marquee-loop {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee-loop {
+  display: flex;
+  width: max-content;
+  animation: marquee-loop 30s linear infinite;
+}
+
+.animate-marquee-loop:hover {
+  animation-play-state: paused;
+}
+

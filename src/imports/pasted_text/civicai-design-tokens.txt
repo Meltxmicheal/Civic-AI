@@ -1,0 +1,1958 @@
+You are a senior product designer, frontend architect, UX engineer, accessibility specialist, and government digital-service designer.
+
+Design and build the COMPLETE FRONTEND UI/UX for:
+
+# CivicAI
+## AI-Powered Smart Civic Issue Reporting & Resolution Platform
+
+Tagline:
+"Report. Track. Resolve."
+
+Tamil:
+"புகாரளிக்கவும். கண்காணிக்கவும். தீர்வு காணவும்."
+
+============================================================
+1. PRODUCT VISION
+============================================================
+
+CivicAI is a citizen-centric civic grievance reporting and resolution
+platform designed for Tamil Nadu urban/local government services.
+
+Citizens can:
+
+- Report civic problems
+- Report anonymously
+- Report in Tamil or English
+- Upload photos/videos
+- Capture GPS location
+- Select location manually
+- Use AI assistance
+- Track complaints
+- View complaint status and timeline
+- Receive notifications
+- View public civic issue heatmaps
+- View public transparency statistics
+- Give feedback
+- Reopen unresolved complaints
+- Chat with CivicAI
+
+Government departments can:
+
+- Receive complaints
+- Review complaints
+- Review AI recommendations
+- Assign complaints
+- Monitor SLA
+- Escalate delayed complaints
+- Manage field officers
+- Verify resolution
+- View analytics
+- Monitor live civic issues
+
+Field officers can:
+
+- View assigned complaints
+- Navigate to complaint location
+- Accept assignments
+- Capture before photos
+- Update progress
+- Capture after photos
+- Submit resolution
+- Work with poor network connectivity
+
+Administrators can:
+
+- Monitor all departments
+- Monitor complaint volume
+- Monitor SLA
+- View heatmaps
+- View live operational status
+- Review AI verification queue
+- Manage departments
+- Manage officers
+- View audit information
+- View analytics
+
+============================================================
+2. DESIGN REFERENCES
+============================================================
+
+Use the INFORMATION ARCHITECTURE and GENERAL DIGITAL GOVERNMENT
+UX PRINCIPLES found in:
+
+Greater Chennai Corporation:
+https://chennaicorporation.gov.in/gcc/
+
+GCC Public Grievance:
+https://gccservices.in/pgr
+
+IMPORTANT:
+
+Do NOT copy their exact UI.
+
+Do NOT copy their logo.
+
+Do NOT copy government seals.
+
+Do NOT copy photographs.
+
+Do NOT copy exact colors.
+
+Do NOT copy source code.
+
+Do NOT reproduce their layout pixel-for-pixel.
+
+Instead create an ORIGINAL design inspired by:
+
+- Tamil Nadu government digital services
+- Indian government citizen portals
+- Greater Chennai Corporation service structure
+- Accessible public-service websites
+- Modern civic technology
+- Smart-city dashboards
+
+The final product must look like a legitimate,
+professional Tamil Nadu civic service platform.
+
+============================================================
+3. CORE DESIGN PRINCIPLE
+============================================================
+
+The design should communicate:
+
+TRUST
+ACCESSIBILITY
+PUBLIC SERVICE
+SIMPLICITY
+TRANSPARENCY
+SAFETY
+ACCOUNTABILITY
+TECHNOLOGY
+
+Avoid making CivicAI look like:
+
+- a startup landing page
+- crypto dashboard
+- cyberpunk application
+- futuristic AI product
+- gaming interface
+- social media application
+
+AI should be helpful but NOT visually overpowering.
+
+The citizen should feel:
+
+"I can report a problem easily."
+
+"I can track what happens."
+
+"I don't need to understand AI."
+
+"I can use this in Tamil."
+
+"I can report anonymously."
+
+============================================================
+4. VISUAL STYLE
+============================================================
+
+Create a modern government digital-service visual system.
+
+Style:
+
+Professional
+Clean
+Trustworthy
+Accessible
+Modern
+Human-centered
+Information-rich but uncluttered
+
+Use:
+
+- White surfaces
+- Light neutral backgrounds
+- Deep civic blue
+- Teal/green secondary color
+- Restrained orange/saffron accent
+- Clear borders
+- Subtle shadows
+- Moderate border radius
+- Strong typography hierarchy
+
+Do NOT use:
+
+- Neon
+- excessive gradients
+- glassmorphism everywhere
+- excessive shadows
+- excessive rounded cards
+- giant decorative illustrations
+- autoplay videos
+- flashy animations
+
+============================================================
+5. COLOR SYSTEM
+============================================================
+
+Create semantic color tokens.
+
+Primary:
+Government-inspired deep blue
+
+Secondary:
+Civic teal/green
+
+Accent:
+Restrained orange/saffron
+
+Background:
+Light neutral gray/blue
+
+Surface:
+White
+
+Text:
+Dark navy/charcoal
+
+Success:
+Accessible green
+
+Warning:
+Accessible amber
+
+Error:
+Accessible red
+
+Info:
+Accessible blue
+
+Do not depend on color alone.
+
+Every important status must use:
+
+ICON + TEXT + COLOR
+
+Example:
+
+✓ Resolved
+● In Progress
+! SLA Breached
+
+Create:
+
+Light theme
+Optional dark accessibility theme
+
+All colors must meet WCAG contrast requirements.
+
+============================================================
+6. TYPOGRAPHY
+============================================================
+
+The platform MUST support Tamil and English properly.
+
+Recommended:
+
+English:
+Inter / Noto Sans
+
+Tamil:
+Noto Sans Tamil
+
+Ensure excellent Tamil glyph rendering.
+
+Create typography tokens:
+
+Display
+H1
+H2
+H3
+H4
+Body Large
+Body
+Body Small
+Caption
+Button
+Navigation
+Labels
+Tamil Heading
+Tamil Body
+
+Tamil text must:
+
+- not overflow
+- not clip
+- not overlap
+- not break buttons
+- not create horizontal scrolling
+
+Use appropriate Tamil line-height.
+
+============================================================
+7. LANGUAGE SUPPORT
+============================================================
+
+CivicAI is FULLY bilingual.
+
+Languages:
+
+English — en
+Tamil — ta
+
+Tamil is NOT an optional translation.
+
+Every important interface must exist in both languages.
+
+Translate:
+
+Navigation
+Buttons
+Forms
+Validation
+Errors
+Notifications
+Complaint status
+Dashboard
+AI chatbot
+Help
+Accessibility
+Empty states
+Success states
+Loading states
+
+Language switcher:
+
+தமிழ் | English
+
+On mobile:
+
+தமிழ்
+English
+
+Remember the user's selected language.
+
+Do not randomly mix languages.
+
+Use natural Tamil wording.
+
+Example:
+
+English:
+"Report an Issue"
+
+Tamil:
+"புகாரளிக்கவும்"
+
+English:
+"Track Complaint"
+
+Tamil:
+"புகாரைக் கண்காணிக்கவும்"
+
+English:
+"Complaint submitted successfully"
+
+Tamil:
+"புகார் வெற்றிகரமாக பதிவு செய்யப்பட்டது"
+
+English:
+"Use my current location"
+
+Tamil:
+"எனது தற்போதைய இருப்பிடத்தைப் பயன்படுத்தவும்"
+
+============================================================
+8. RESPONSIVE DESIGN
+============================================================
+
+Mobile-first is mandatory.
+
+Create layouts for:
+
+390 × 844
+412 × 915
+768 × 1024
+1024 × 768
+1280 × 800
+1440 × 900
+1920 × 1080
+
+Support:
+
+Android
+iPhone
+Tablet
+Laptop
+Desktop
+
+The design must adapt instead of simply shrinking.
+
+NO horizontal scrolling.
+
+Minimum interactive target:
+
+44 × 44 px.
+
+Mobile must be comfortable for thumb interaction.
+
+============================================================
+9. RESPONSIVE NAVIGATION
+============================================================
+
+Desktop:
+
+Logo
+Home
+Services
+Report Issue
+Track Complaint
+Civic Map
+Transparency
+Departments
+Help
+
+Right:
+
+தமிழ் | English
+Accessibility
+AI Assistant
+Sign In
+
+Mobile:
+
+Logo
+Language
+Accessibility
+Menu
+
+Bottom navigation:
+
+Home
+Report
+Track
+Map
+AI
+
+"Report" should be the primary mobile action.
+
+============================================================
+10. GOVERNMENT HEADER
+============================================================
+
+Create:
+
+TOP UTILITY BAR
+
+Contains:
+
+Tamil | English
+Accessibility
+Text Size
+Help
+Important Contacts
+
+MAIN HEADER
+
+CivicAI logo
+CivicAI name
+Tamil tagline
+
+Navigation
+
+Use a clean government-style structure.
+
+Keep the header compact.
+
+============================================================
+11. HOMEPAGE
+============================================================
+
+Create a polished citizen-first homepage.
+
+Hero:
+
+"Make Your City Better"
+
+Tamil:
+
+"உங்கள் நகரத்தை சிறப்பாக மாற்றுங்கள்"
+
+Subheading:
+
+"Report civic issues, track progress and see how your community's
+complaints are being resolved."
+
+Primary:
+
+Report an Issue
+
+Secondary:
+
+Track Complaint
+
+Small reassurance:
+
+"Report anonymously. No account required."
+
+Hero visual:
+
+Use an ORIGINAL civic map/city illustration.
+
+No politician images.
+
+No fake government seal.
+
+No copied GCC imagery.
+
+============================================================
+12. QUICK ACTIONS
+============================================================
+
+Create four major service cards:
+
+Report an Issue
+Track Complaint
+Civic Map
+Ask CivicAI
+
+Each:
+
+Icon
+Title
+Description
+Action
+
+============================================================
+13. CIVIC SERVICES
+============================================================
+
+Categories:
+
+Roads & Footpaths
+Garbage & Sanitation
+Street Lights
+Water Supply
+Drainage
+Traffic & Parking
+Parks & Trees
+Public Buildings
+Other
+
+Show:
+
+Icon
+English
+Tamil
+Description
+
+============================================================
+14. REPORT ISSUE FLOW
+============================================================
+
+Create a complete multi-step reporting experience.
+
+STEP 1 — ISSUE
+
+Question:
+
+"What happened?"
+
+Categories:
+
+Road
+Garbage
+Street Light
+Water
+Drainage
+Traffic
+Park/Tree
+Other
+
+Tamil equivalents must exist.
+
+STEP 2 — DESCRIPTION
+
+Textarea.
+
+Support:
+
+English
+Tamil
+Tamil-English mixed input
+
+Actions:
+
+Voice Input
+Attach Photo
+Attach Video
+
+STEP 3 — LOCATION
+
+Options:
+
+Use Current Location
+Select on Map
+Search Location
+
+Show:
+
+GPS accuracy
+
+Example:
+
+"Location accuracy: 8 meters"
+
+Allow user to move the pin.
+
+Show ward/zone if available.
+
+STEP 4 — EVIDENCE
+
+Photo/video upload.
+
+Show:
+
+Preview
+Upload progress
+Remove
+Retry
+
+Allowed file types
+Maximum size
+
+Privacy warning:
+
+"Do not upload unnecessary personal information."
+
+STEP 5 — PRIVACY
+
+Choices:
+
+Report Anonymously
+
+or
+
+Continue with Account
+
+Explain anonymous reporting clearly.
+
+Anonymous:
+
+"No name or account is required."
+
+STEP 6 — AI REVIEW
+
+Show:
+
+AI Suggested Category
+AI Suggested Severity
+AI Confidence
+Possible Duplicate
+Suggested Department
+Location
+
+Important:
+
+Never label these as final decisions.
+
+Use:
+
+"AI Recommendation"
+
+"Suggested Category"
+
+"Suggested Priority"
+
+"Please confirm"
+
+Actions:
+
+Confirm
+Change
+
+STEP 7 — FINAL REVIEW
+
+Display complete complaint summary.
+
+Primary:
+
+Submit Complaint
+
+Secondary:
+
+Back
+
+============================================================
+15. SECURE SUBMISSION UX
+============================================================
+
+The frontend must be designed around safe idempotent submission.
+
+States:
+
+Default
+Validating
+Uploading
+Analyzing
+Submitting
+Success
+Network Error
+Timeout
+Server Error
+Duplicate Warning
+Retrying
+
+When user submits:
+
+Button becomes:
+
+"Submitting..."
+
+Disable duplicate clicks.
+
+Show:
+
+"Please don't close this page."
+
+If network fails:
+
+"Your complaint could not be completed."
+
+Button:
+
+"Retry safely"
+
+IMPORTANT:
+
+Retrying must conceptually use the SAME idempotency key.
+
+The UI must never encourage creating a second complaint.
+
+Do not display:
+
+database errors
+stack traces
+internal IDs
+API errors
+provider errors
+
+============================================================
+16. ANONYMOUS REPORTING
+============================================================
+
+Anonymous reporting is a CORE FEATURE.
+
+After submission:
+
+Title:
+
+"Complaint Submitted Successfully"
+
+Show:
+
+Complaint ID
+
+Example:
+
+CIV-2026-8X72KQ
+
+Tracking PIN:
+
+493821
+
+Important:
+
+"Save your Complaint ID and Tracking PIN.
+You will need them to track this complaint."
+
+Actions:
+
+Copy Complaint ID
+Download Receipt
+Track Complaint
+
+Do not require:
+
+Name
+Email
+Phone
+
+unless the citizen voluntarily chooses notifications.
+
+============================================================
+17. TRACK COMPLAINT
+============================================================
+
+Public tracking page.
+
+Fields:
+
+Complaint ID
+Tracking PIN
+
+CTA:
+
+Track Complaint
+
+Do not expose private information.
+
+Protect against complaint enumeration.
+
+Create states:
+
+Invalid ID
+Invalid PIN
+Too many attempts
+Complaint found
+Complaint unavailable
+Service unavailable
+
+============================================================
+18. COMPLAINT DETAIL
+============================================================
+
+Example:
+
+CIV-2026-8X72KQ
+
+Road Pothole
+
+Ward 142
+
+Status:
+
+In Progress
+
+SLA:
+
+08:32:14 remaining
+
+Timeline:
+
+✓ Complaint Submitted
+✓ AI Analysis
+✓ Department Assigned
+✓ Officer Accepted
+● Work in Progress
+○ Resolution Verification
+○ Citizen Confirmation
+○ Resolved
+
+Show:
+
+Category
+Location
+Priority
+Department
+SLA
+Last Update
+
+Do not expose unnecessary officer personal information.
+
+============================================================
+19. CITIZEN DASHBOARD
+============================================================
+
+Heading:
+
+"Vanakkam"
+
+Cards:
+
+My Complaints
+Active
+Resolved
+Reopened
+
+Complaint cards:
+
+ID
+Category
+Location
+Status
+SLA
+Last Updated
+
+Filters:
+
+All
+Active
+Resolved
+Reopened
+
+============================================================
+20. CIVIC MAP
+============================================================
+
+Create an interactive civic map.
+
+Layers:
+
+All
+Roads
+Garbage
+Water
+Drainage
+Street Lights
+Traffic
+Parks
+
+Features:
+
+Heatmap
+Issue markers
+Ward boundaries
+Zone boundaries
+
+Filters:
+
+Date
+Category
+Severity
+Status
+Ward
+Zone
+
+Public map MUST NOT expose:
+
+Citizen identity
+Phone numbers
+Email
+Exact private locations
+Sensitive complaint information
+
+Where necessary, approximate public locations.
+
+Map legend:
+
+Low
+Moderate
+High
+
+Provide:
+
+Map View
+List View
+
+List View is mandatory for accessibility.
+
+============================================================
+21. LIVE LOCATION
+============================================================
+
+Citizen:
+
+Capture GPS only when reporting or explicitly requested.
+
+Do NOT continuously track citizens.
+
+Show:
+
+Location permission
+GPS accuracy
+Location unavailable
+Location denied
+Location updating
+
+Officer:
+
+Live location may be shown only during active work/shift.
+
+Supervisor/admin can view authorized officer locations.
+
+Citizen must NOT see private officer tracking.
+
+Create UI for:
+
+Online
+Offline
+Location unavailable
+GPS accuracy poor
+
+============================================================
+22. AI CHATBOT
+============================================================
+
+Create CivicAI Assistant.
+
+Desktop:
+
+Floating button.
+
+Click:
+
+Right-side chat drawer.
+
+Mobile:
+
+Full-screen chat.
+
+Greeting:
+
+"Vanakkam! How can CivicAI help you?"
+
+Tamil:
+
+"வணக்கம்! CivicAI உங்களுக்கு எப்படி உதவ வேண்டும்?"
+
+Suggested prompts:
+
+Report a pothole
+Track my complaint
+How do I report garbage?
+What happens after I submit?
+என் புகார் நிலை என்ன?
+எப்படி புகார் அளிப்பது?
+
+Chatbot can:
+
+Answer civic FAQs
+Guide complaint creation
+Check complaint status
+Explain complaint stages
+Help in Tamil/English
+
+Chatbot MUST NOT:
+
+Directly change complaint status
+Directly assign officers
+Override government decisions
+Access unauthorized complaint information
+
+============================================================
+23. AI ASSISTED REPORTING
+============================================================
+
+Create AI suggestion UI.
+
+Example:
+
+AI Analysis
+
+Detected:
+
+Pothole
+
+Confidence:
+
+94%
+
+Suggested Category:
+
+Road Maintenance
+
+Suggested Severity:
+
+High
+
+Suggested Department:
+
+Roads
+
+Possible duplicate:
+
+2 nearby reports
+
+IMPORTANT:
+
+Use wording:
+
+"AI Recommendation"
+
+NOT:
+
+"AI Decision"
+
+Citizen/admin must be able to override.
+
+============================================================
+24. FIELD OFFICER MOBILE UI
+============================================================
+
+Create a separate mobile-first officer interface.
+
+Header:
+
+Officer
+Department
+Online/Offline
+
+Dashboard:
+
+Assigned
+Urgent
+Due Soon
+Completed
+
+Complaint card:
+
+ID
+Category
+Distance
+Priority
+SLA
+
+Actions:
+
+Accept
+Navigate
+Start Work
+
+Resolution:
+
+Before Photo
+Start Work
+Update Status
+After Photo
+Submit Resolution
+
+AI resolution verification:
+
+"AI verification: likely resolved"
+
+or:
+
+"Additional review required"
+
+AI result is only a recommendation.
+
+============================================================
+25. ADMIN CONTROL CENTER
+============================================================
+
+Create a professional government control center.
+
+Title:
+
+CivicAI Control Center
+
+Metrics:
+
+Total Complaints
+Open
+In Progress
+Resolved
+SLA Breached
+Critical
+
+Main:
+
+Large live map
+
+Side panel:
+
+Live Alerts
+
+Bottom:
+
+Department Performance
+SLA Performance
+Issue Trends
+
+Filters:
+
+Date
+Ward
+Zone
+Department
+Category
+Severity
+
+============================================================
+26. AI VERIFICATION QUEUE
+============================================================
+
+Create:
+
+"AI Verification Required"
+
+Each complaint:
+
+Complaint ID
+Category
+Severity
+AI Confidence
+Reason
+
+Actions:
+
+Approve
+Change
+Escalate
+
+Always label:
+
+AI Recommendation
+
+============================================================
+27. DEPARTMENT DASHBOARD
+============================================================
+
+Show:
+
+Assigned
+Pending
+In Progress
+Resolved
+SLA Breached
+
+Complaint table.
+
+Columns:
+
+Complaint ID
+Category
+Ward
+Priority
+Officer
+SLA
+Status
+
+On mobile convert table rows to cards.
+
+============================================================
+28. PUBLIC TRANSPARENCY DASHBOARD
+============================================================
+
+Heading:
+
+"How is our city responding?"
+
+Metrics:
+
+Total Complaints
+Resolved
+In Progress
+Resolution Rate
+Average Resolution Time
+SLA Compliance
+
+Charts:
+
+Complaint trends
+Category distribution
+Ward heatmap
+Department performance
+Resolution trends
+
+Charts must be accessible.
+
+Do not depend only on color.
+
+============================================================
+29. NOTIFICATIONS
+============================================================
+
+Create notification center.
+
+Types:
+
+Complaint Submitted
+Complaint Assigned
+Status Changed
+Officer Update
+SLA Warning
+SLA Breached
+Resolution Submitted
+Complaint Resolved
+Complaint Reopened
+
+Use:
+
+Icon
+Title
+Description
+Time
+Read/unread
+
+============================================================
+30. FEEDBACK
+============================================================
+
+After resolution:
+
+"Was your issue resolved?"
+
+Yes
+No
+
+Rating:
+
+1–5 stars
+
+Comment:
+
+"Tell us what happened."
+
+If No:
+
+"Reopen Complaint"
+
+============================================================
+31. ACCESSIBILITY
+============================================================
+
+Accessibility is mandatory.
+
+Include:
+
+Skip to Content
+Keyboard Navigation
+Visible Focus
+Screen Reader support
+WCAG-compliant contrast
+Large touch targets
+Text resizing
+High Contrast
+Highlight Links
+Line Spacing
+Reduced Motion
+Text-to-Speech
+Accessible forms
+Accessible errors
+Accessible maps
+Map alternative List View
+
+Accessibility toolbar:
+
+Accessibility
+Increase Text
+Decrease Text
+High Contrast
+Highlight Links
+Line Spacing
+Reduce Motion
+Text to Speech
+Reset
+
+Support browser zoom up to 200%.
+
+============================================================
+32. SECURITY-AWARE UI
+============================================================
+
+Create UI states for:
+
+Session Expired
+Unauthorized
+Forbidden
+Rate Limited
+Invalid Input
+Invalid PIN
+Too Many Attempts
+File Too Large
+Invalid File Type
+Upload Failed
+Network Offline
+Server Unavailable
+Duplicate Submission
+Request Timeout
+
+Never expose:
+
+API keys
+tokens
+database errors
+stack traces
+internal service names
+internal AI provider information
+
+Show friendly safe messages.
+
+============================================================
+33. FILE UPLOAD UX
+============================================================
+
+Support:
+
+JPEG
+PNG
+WEBP
+MP4 where appropriate
+
+Show:
+
+Preview
+Upload progress
+Compression
+Remove
+Retry
+
+Show privacy warning.
+
+Optional:
+
+"Automatically blur faces and vehicle number plates."
+
+Do not expose raw storage URLs.
+
+============================================================
+34. PERFORMANCE-FIRST FRONTEND
+============================================================
+
+Design for:
+
+4G
+Slow networks
+Low-end Android devices
+Older browsers where practical
+
+Avoid:
+
+Autoplay video
+Large background video
+Heavy animation
+Huge images
+Excessive JavaScript
+Excessive shadows
+Heavy map loading on initial page
+
+Use:
+
+Skeleton loading
+Lazy loading
+Progressive loading
+Pagination
+Virtualized long lists
+Compressed images
+Lazy map initialization
+Code splitting
+
+Target:
+
+LCP < 2.5s
+INP < 200ms
+CLS < 0.1
+
+============================================================
+35. OFFLINE / POOR NETWORK UX
+============================================================
+
+Create:
+
+Offline banner:
+
+"You are offline."
+
+Tamil:
+
+"நீங்கள் தற்போது இணையத்துடன் இணைக்கப்படவில்லை."
+
+Show:
+
+Retry
+
+For field officers:
+
+Allow temporary offline work.
+
+Show:
+
+Saved locally
+Pending upload
+Syncing
+Synced
+Sync failed
+
+============================================================
+36. ERROR UX
+============================================================
+
+Errors must be human-readable.
+
+Bad:
+
+"500 Internal Server Error"
+
+Good:
+
+"Something went wrong. Please try again."
+
+Tamil:
+
+"ஏதோ தவறு ஏற்பட்டுள்ளது. மீண்டும் முயற்சிக்கவும்."
+
+For network:
+
+"We couldn't connect to the service."
+
+Tamil:
+
+"சேவையுடன் இணைக்க முடியவில்லை."
+
+============================================================
+37. LOADING STATES
+============================================================
+
+Create skeletons for:
+
+Homepage
+Complaint list
+Complaint detail
+Dashboard
+Map
+Analytics
+Chat
+
+Never leave blank white screens.
+
+============================================================
+38. EMPTY STATES
+============================================================
+
+Examples:
+
+No complaints:
+
+"You haven't reported any complaints yet."
+
+Tamil:
+
+"நீங்கள் இதுவரை எந்தப் புகாரும் பதிவு செய்யவில்லை."
+
+No results:
+
+"No complaints match your filters."
+
+Map empty:
+
+"No civic issues found in this area."
+
+============================================================
+39. DESIGN SYSTEM
+============================================================
+
+Create reusable Figma components.
+
+Components:
+
+Buttons
+Icon Buttons
+Header
+Footer
+Navigation
+Mobile Bottom Navigation
+Cards
+Service Cards
+Complaint Cards
+Status Badges
+Priority Badges
+SLA Badges
+Timeline
+Stepper
+Form Inputs
+Textarea
+Select
+Checkbox
+Radio
+Switch
+Modal
+Drawer
+Toast
+Alert
+Tooltip
+Tabs
+Table
+Pagination
+Map Controls
+Map Marker
+Heatmap Legend
+Charts
+AI Analysis Card
+Upload Component
+Location Picker
+OTP/PIN Input
+Language Switcher
+Accessibility Toolbar
+Chat UI
+Skeleton
+Empty State
+Error State
+
+Each component must have:
+
+Default
+Hover
+Focus
+Active
+Disabled
+Loading
+Error
+Success
+
+============================================================
+40. DESIGN TOKENS
+============================================================
+
+Create Figma variables/tokens for:
+
+Colors
+Typography
+Spacing
+Radius
+Shadows
+Borders
+Breakpoints
+Motion
+Icons
+
+Use an 8px spacing system.
+
+============================================================
+41. MOBILE NAVIGATION
+============================================================
+
+Mobile bottom navigation:
+
+Home
+Report
+Track
+Map
+AI
+
+Report should visually stand out.
+
+Do not allow chatbot to cover bottom navigation.
+
+============================================================
+42. FOOTER
+============================================================
+
+Create government-style footer.
+
+Sections:
+
+CivicAI
+About
+Services
+Departments
+Help
+Accessibility
+Privacy
+Terms
+Security
+Contact
+Sitemap
+
+Do NOT invent government phone numbers.
+
+Use placeholders:
+
+"Official Civic Helpline"
+
+until verified.
+
+============================================================
+43. SECURITY UI PRINCIPLES
+============================================================
+
+The frontend should be designed for a secure backend.
+
+Requirements:
+
+- Never rely on frontend authorization
+- Never expose secrets
+- Never expose database internals
+- Never put sensitive information into URLs
+- Handle expired sessions
+- Handle rate limits
+- Handle duplicate submission
+- Handle safe retries
+- Handle file validation errors
+- Handle unauthorized access
+- Handle offline states
+
+Mutating operations should conceptually support:
+
+Idempotency-Key
+
+The UI must prevent accidental double submission.
+
+============================================================
+44. INFORMATION ARCHITECTURE
+============================================================
+
+PUBLIC:
+
+Home
+Services
+Report Issue
+Track Complaint
+Civic Map
+Transparency
+Help
+AI Assistant
+
+CITIZEN:
+
+Dashboard
+My Complaints
+Notifications
+Feedback
+Profile
+Privacy
+
+FIELD OFFICER:
+
+Dashboard
+Assigned
+Map
+Tasks
+Resolution
+Profile
+
+DEPARTMENT:
+
+Dashboard
+Queue
+Assignments
+SLA
+Analytics
+
+ADMIN:
+
+Control Center
+All Complaints
+Map
+AI Verification
+Departments
+Officers
+SLA
+Analytics
+Audit
+Settings
+
+============================================================
+45. FIGMA PAGE STRUCTURE
+============================================================
+
+Create these Figma pages:
+
+01 Cover
+02 Design Principles
+03 Brand
+04 Color System
+05 Typography
+06 Icons
+07 Accessibility
+08 Components
+09 Public Homepage
+10 Services
+11 Report Issue
+12 Anonymous Reporting
+13 Complaint Tracking
+14 Complaint Detail
+15 Citizen Dashboard
+16 Civic Map
+17 Transparency
+18 AI Assistant
+19 Notifications
+20 Feedback
+21 Field Officer Mobile
+22 Department Dashboard
+23 Admin Control Center
+24 AI Verification
+25 Responsive Desktop
+26 Responsive Tablet
+27 Responsive Mobile
+28 Tamil Screens
+29 Error States
+30 Loading States
+31 Prototype Flows
+
+============================================================
+46. REQUIRED PROTOTYPE FLOWS
+============================================================
+
+FLOW 1 — ANONYMOUS REPORT
+
+Home
+→ Report Issue
+→ Select Category
+→ Description
+→ Photo
+→ Location
+→ Anonymous
+→ AI Analysis
+→ Confirm
+→ Review
+→ Submit
+→ Success
+→ Complaint ID + PIN
+→ Track
+
+FLOW 2 — REGISTERED CITIZEN
+
+Home
+→ Sign In
+→ Dashboard
+→ Report Issue
+→ Submit
+→ Complaint Detail
+
+FLOW 3 — TRACK
+
+Home
+→ Track Complaint
+→ Complaint ID
+→ Tracking PIN
+→ Timeline
+
+FLOW 4 — AI CHAT
+
+Home
+→ AI Assistant
+→ Tamil/English
+→ Ask Question
+→ Suggested Answer
+→ Start Complaint
+
+FLOW 5 — FIELD OFFICER
+
+Officer Login
+→ Dashboard
+→ Assigned Complaint
+→ Accept
+→ Navigate
+→ Before Photo
+→ Start Work
+→ After Photo
+→ Submit Resolution
+→ AI Verification
+→ Complete
+
+FLOW 6 — ADMIN
+
+Admin Login
+→ Control Center
+→ Live Map
+→ Complaint
+→ AI Recommendation
+→ Verify
+→ Assign
+→ SLA Monitoring
+
+============================================================
+47. REQUIRED FIGMA STATES
+============================================================
+
+For major pages create:
+
+English Desktop
+Tamil Desktop
+
+English Tablet
+Tamil Tablet
+
+English Mobile
+Tamil Mobile
+
+Also create:
+
+Loading
+Empty
+Error
+Offline
+Success
+
+============================================================
+48. DESIGN CONTENT
+============================================================
+
+Use realistic sample civic data.
+
+Examples:
+
+CIV-2026-8X72KQ
+CIV-2026-4A92PL
+CIV-2026-7M31RT
+
+Categories:
+
+Pothole
+Garbage Overflow
+Street Light Failure
+Water Leakage
+Blocked Drain
+Illegal Dumping
+Fallen Tree
+
+Example locations:
+
+Ward 142
+Ward 143
+Zone 10
+
+Do not use real citizen personal information.
+
+============================================================
+49. FINAL QUALITY BAR
+============================================================
+
+The final UI must look like a production-quality civic
+government digital platform.
+
+It should be:
+
+More modern than traditional government portals.
+
+More trustworthy than startup websites.
+
+Simpler than traditional grievance forms.
+
+More accessible than typical dashboards.
+
+More transparent than conventional complaint systems.
+
+AI should be invisible when unnecessary
+and helpful when needed.
+
+============================================================
+50. FINAL DESIGN GOAL
+============================================================
+
+The final experience should communicate:
+
+"Anyone can report a civic issue."
+
+"I can use Tamil or English."
+
+"I can report anonymously."
+
+"I can use my phone."
+
+"I can share my location."
+
+"I can track what happens."
+
+"I can see whether the government responded."
+
+"AI helps route and understand my complaint,
+but humans remain accountable."
+
+The final product should feel like:
+
+Tamil Nadu Government digital-service credibility
++
+Greater Chennai Corporation service familiarity
++
+Modern civic UX
++
+AI assistance
++
+Real-time maps
++
+Public transparency
++
+Strong accessibility
++
+Mobile-first design
+
+Create a complete high-fidelity, responsive, bilingual,
+accessible, production-ready Figma design system and
+clickable prototype.
+
+Do not create only a landing page.
+
+Design the COMPLETE FRONTEND PRODUCT.

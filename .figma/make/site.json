@@ -1,0 +1,10 @@
+{
+  "description": "Generates authentic fake data on demand for testing and development, helping users create realistic datasets without relying on external sources.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
